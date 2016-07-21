@@ -12,5 +12,10 @@ main (int argc, char *argv[]) {
 
 void
 wc( FILE *infile, char *inname) {
+int words =0;
+int charcters;
+int num_lns;
+
+
     
 }
