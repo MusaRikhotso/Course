@@ -5,7 +5,8 @@
 int main() {
     struct rlimit lim;
     // print the following values using rlimit
-    printf("stack size: %d\n",  0);
-    printf("process limit: %d\n", 0);
-    printf("max file descriptors: %d\n", 0);
+    printf("stack size: (max limit) %ld \n", lim.rlim_max);
+    printf("process limit: (The maximum stack size for the process) %d\n", RLIMIT_STACK);
+    printf("max file descriptors: (current limit) %ld\n", lim.rlim_cur);
+    
 }
